@@ -1,0 +1,26 @@
+--- src/gtk-glade/Makefile.am	2011-04-17 19:24:53.000000000 -0400
++++ src/gtk-glade/Makefile.am	2011-09-17 05:24:01.000000000 -0400
+@@ -16,8 +16,8 @@
+ gladedir = $(datadir)/desmume/glade
+ glade_DATA = glade/DeSmuMe_Dtools.glade glade/DeSmuMe.glade glade/DeSmuME.xpm
+ 
+-bin_PROGRAMS = desmume-glade
+-desmume_glade_SOURCES =  \
++bin_PROGRAMS = desmume-svn-glade
++desmume_svn_glade_SOURCES =  \
+ 	globals.h glade-xml.cpp \
+ 	callbacks.cpp callbacks.h callbacks_IO.cpp callbacks_IO.h \
+ 	desmume.cpp desmume.h \
+@@ -30,10 +30,10 @@
+ 	../sndsdl.h ../sndsdl.cpp ../ctrlssdl.h ../ctrlssdl.cpp \
+ 	../driver.h ../driver.cpp
+ 
+-desmume_glade_LDADD = ../libdesmume.a \
++desmume_svn_glade_LDADD = ../libdesmume.a \
+ 			$(SDL_LIBS) $(GTKGLEXT_LIBS) $(LIBGLADE_LIBS) \
+ 			$(GTHREAD_LIBS) $(ALSA_LIBS) $(LIBAGG_LIBS) \
+ 			$(LIBSOUNDTOUCH_LIBS)
+ if HAVE_GDB_STUB
+-desmume_glade_LDADD += ../gdbstub/libgdbstub.a
++desmume_svn_glade_LDADD += ../gdbstub/libgdbstub.a
+ endif
