@@ -9,7 +9,7 @@ Release:		%mkrel 0
 Summary:	A Nintendo DS emulator
 License:	GPLv2+
 Group:		Emulators
-URL:		http://desmume.sourceforge.net/
+URL:		https://desmume.sourceforge.net/
 Source0:	%{name}-%{revision}-1.tar.bz2
 #Source1:	%{name}-%{version}-wx-headers.tar.bz2
 Source10:	%{name}-48.png
