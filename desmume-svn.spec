@@ -26,6 +26,8 @@ Patch2:		%{name}_gtkglade_makefile.patch
 Patch3:		%{name}_gtk_makefile.patch
 Patch4:		%{name}_wx_makefile.patch
 
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	automake
 BuildRequires:	autogen
 BuildRequires:	autoconf
