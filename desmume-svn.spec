@@ -4,7 +4,7 @@ Name:			desmume-svn
 %define stablelongname	DeSmuME
 %define revision 	r4092
 Version:		0.9.8.%{revision}
-Release:		%mkrel 0
+Release:		1
 
 Summary:	A Nintendo DS emulator
 License:	GPLv2+
